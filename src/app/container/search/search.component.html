@@ -3,7 +3,7 @@
     <button class="btn btn-search" >Search</button>
 </div>
 <div class="search-result-for">
-    <p>
+    <p *ngIf="searchText != ''">
         <strong>Search result for:</strong> {{searchText}}
     </p>
 </div>

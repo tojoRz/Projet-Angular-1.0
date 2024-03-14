@@ -23,6 +23,15 @@
     background-color: #28282B;
     margin-left: -5px;
     color: #fff;
+    cursor: pointer;
+}
+
+.btn-search-disabled{
+    padding: 10px 30px;
+    background-color: #aaa;
+    margin-left: -5px;
+    color: #999;
+    cursor: not-allowed | no-drop;
 }
 
 .search-result-for{

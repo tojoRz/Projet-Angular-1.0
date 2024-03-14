@@ -18,7 +18,7 @@ export class ProductListComponent {
       color: ["White", "Blue", "Black"],
       price: 160,
       discountPrice: 140,
-      is_in_inventory: true,
+      is_in_inventory: false,
       items_left: 3,
       imageURL: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45544e10-1e4c-437d-8340-dc4e9a9fbead/chaussure-de-running-sur-route-react-infinity-run-flyknit-3-pour-TXLsbD.png",
       slug: "nike-react-infinity-run-flyknit-3"

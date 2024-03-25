@@ -1,1 +1,12 @@
-<p>filter works!</p>
+<div class="filter-container">
+    <span>Filter: </span>
+    
+    <input type="radio" name="filter" value="Tous">
+    <span>{{'Tous ('+all+')'}}</span>
+
+    <input type="radio" name="filter" value="true">
+    <span>{{'En stock ('+inStock+')'}}</span>
+
+    <input type="radio" name="filter" value="false">
+    <span>{{'En rupture de stock ('+outOfstock+')'}}</span>
+</div>

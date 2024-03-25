@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './filter.component.css'
 })
 export class FilterComponent {
+  all: number = 0;
+  inStock: number = 0;
+  outOfstock: number = 0;
+  
 
 }

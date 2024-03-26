@@ -54,4 +54,8 @@ export class ProductListComponent {
       slug: "nike-react-kiger-9"
     },
   ];
+
+  totalProductCount = this.products.length;
+  totalProductInStock = this.products.filter( p => p.is_in_inventory === true ).length;
+  totalProductOutOfStock = this.products.filter( p => p.is_in_inventory === false ).length; 
 }

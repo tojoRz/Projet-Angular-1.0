@@ -37,4 +37,10 @@ export class ContainerComponent {
       this.addToCart++;
     }
   }
+
+  searchText: string = '';
+
+  setSearchText(value: string){
+    this.searchText = value;
+  }
 }

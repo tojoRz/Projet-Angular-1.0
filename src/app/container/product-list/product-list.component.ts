@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'product-list',
@@ -53,11 +53,29 @@ export class ProductListComponent {
       imageURL: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c2ba1be3-ea13-47ce-96c9-9152903c082e/chaussure-de-trail-kiger-9-pour-G62sHD.png",
       slug: "nike-react-kiger-9"
     },
+    {
+      id: 4,
+      name: "Addidas",
+      description: "lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+      brand: "ADDIDAS",
+      gender: "MEN",
+      category: "RUNNING",
+      size: [6, 7, 8, 9, 10],
+      color: ["White", "Blue", "Black"],
+      price: 139,
+      is_in_inventory: true,
+      items_left: 3,
+      imageURL: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c2ba1be3-ea13-47ce-96c9-9152903c082e/chaussure-de-trail-kiger-9-pour-G62sHD.png",
+      slug: "addidas-react-kiger-9"
+    },
   ];
 
   totalProductCount = this.products.length;
   totalProductInStock = this.products.filter( p => p.is_in_inventory === true ).length;
   totalProductOutOfStock = this.products.filter( p => p.is_in_inventory === false ).length;
+
+  @Input()
+  searchText: string = '';
 
   selectedFilterRadioButton: string = 'all';
 

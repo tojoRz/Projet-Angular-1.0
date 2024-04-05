@@ -17,5 +17,5 @@
   <input [value]="name" (input)="onNameChange($event)" /> <br />
   <p>name = {{ name }}</p> -->
   <app-search (searchTextChanged)="setSearchText($event)"></app-search>
-  <product-list></product-list>
+  <product-list [searchText]="searchText" ></product-list>
 </div>
